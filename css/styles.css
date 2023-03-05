@@ -264,11 +264,13 @@ color: #FFFFFF;
 
 .feature-list {
 display: flex;
+width: 100%;
+
 }
 .feature-item {
 
-    width: 264px;
-    margin-right: 24px;
+    width:256px ;
+    margin-right:24px;
     
 }
 .feature-item:last-child {
@@ -317,8 +319,8 @@ margin-right: 0;
 }
 
 .feature-text {
-   
-    
+font-weight: 400;
+    padding: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -617,15 +619,15 @@ padding: 0;
     align-items: center;
     margin-right: 120px;
 }
-.footer-social{
-    display: flex;
-}
+
 
 .footer-subscribe{
-    display: block;
+   
         justify-content: center;
-        align-items: center;
+        
         margin-left: auto;
+        
+        
 }
 .footer-input{
     min-width: 264px;
@@ -1335,7 +1337,8 @@ margin-left: auto;
     display: flex;
     justify-content: center;
 }
-.footer-soc{
+.footer-soc-list{
+    justify-content: center;
 
 }
 
@@ -1431,7 +1434,7 @@ margin-left: auto;
 
     }
     
-    
+
     .mob-item{
         margin-bottom: 40px;
     }
@@ -1446,7 +1449,6 @@ margin-left: auto;
     }
 
    
-
     .info-nav {
         display: block;
         margin-bottom: 48px;
@@ -1519,14 +1521,10 @@ margin-left: auto;
         display: none;
     }
 
-    .info-nav {
-     display: flex;
-     font-size: 12px;
-     flex-direction: column;
-    margin-left: auto;
-     
-             
-    }
+ .info-nav {
+    display: block;
+    
+ }
     
     .info-link{
      padding: 0;
@@ -1636,13 +1634,13 @@ display: flex;
     margin-right: 24px;
     margin-bottom: 72px;
 }
-.footer-subscribe {
+.soc-logo{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
+
 }
+
+
+
 
 /*_____________PORTFOLIO___________*/
 
@@ -1671,16 +1669,30 @@ display: flex;
 
 
 
-/*____________________DESKTOP__________________*/
+/*____________________DESCKTOP__________________*/
 
 @media screen and (min-width:1200px) {
-    .container {
+    .conteiner {
         max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
         
     }
     
+
+.info-nav {
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+    
+
+}
+
+.info-nav .item+.item {
+    margin-left: 40px;
+}
+
+
 .hero {
 padding-top: 188px;
 padding-bottom: 188px;
@@ -1704,19 +1716,12 @@ width: 100%;
     padding: 120px 0;
 }
 
-.feature-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    
-}
-
 
 .feature-item {
 
     width: 264px;
-    margin-right: 24px;
+    
+    margin: 0;
     
 }
 
@@ -1759,6 +1764,20 @@ width: 100%;
     padding-top: 120px;
     padding-bottom: 120px;
 
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-subscribe {
+    
+    margin-left: auto;
+    
+
+}
+.footer-soc-logo {
+    margin-right: 120px;
 }
 
 }
