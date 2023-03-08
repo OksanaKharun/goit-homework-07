@@ -48,22 +48,24 @@
                     <use href="./images/symbol-defs.svg#icon-close-modal"></use>
                 </svg>
             </button>
-
+          <div class="mob-main-nav">
             <nav class="main-nav">
-            
                 <ul class="mob-site-nav list">
                     <li class="mob-item"><a class="mob-nav-link link-studio link" href="./index.html">Studio</a></li>
                     <li class="mob-item"><a class="mob-nav-link link" href="./portfolio.html">Portfolio</a></li>
-                    <li class="mob-item"><a class="mob-nav-link link" href="">Contacts</a></li>
+                    <li class="mob-item"><a class="mob-nav-link link-contacts link" href="">Contacts</a></li>
                 </ul>
             </nav>
+            </div>
+            <div class="mobile-footer">
+     <div class="mob-main-nav">
           <address class="mob-site-info list">
             <ul class="info-nav list">
-                <li class="tel-item"><a class="mob-info link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li class="tel-item"><a class="mob-info-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 <li class="email-item"><a class="mob-info link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
            </ul>
           </address>
-
+     </div>
 <ul class="menu-soc-list list">
     <li class="menu-soc-item">
         <a href="#" class="menu-soc-link">
@@ -96,7 +98,7 @@
         </a>
     </li>
 </ul>
-
+</div>
         </div>
 
     </div>
@@ -104,10 +106,24 @@
 
 <main>
     
-    <section class="hero mob-hero">
+    <section class=" hero mob-hero">
         <h1 class="hero-title mob-hero-title">Effective Solutions<br> for Your Business</h1>
         <button type="button" class="button " data-modal-open>Order Service</button>
     </section> 
+    <picture>
+        <source srcset="./images/people-office.jpg 1x, 
+                        ./images/people-office2x.jpg 2x" 
+                        media="(min-width:1200px)">
+    
+        <source srcset="./images/hero-tab.jpg 1x, 
+                        ./images/hero-tab-2x.jpg 2x" 
+                        media="(min-width:768px)">
+    
+        <source srcset="./images/hero-mob.jpg 1x, 
+                        ./images/hero-mob2x.jpg 2x" 
+                        media="(max-width:768px)">
+    
+    </picture>
 
    <section class="feature-section">
        <div class="conteiner">
@@ -140,13 +156,28 @@
           <h2 class="team-title">What are we doing</h2>
            <ul class="activity-list list"> 
                <li class="img"> 
-               
+                <picture>
+                    <source srcset="./images/img-1.jpg 1x, 
+                                    ./images/img1-2x.jpg 2x" 
+                                     media="(min-width:1200px)">
+                </picture>
                  <img class="activity-pic" src="./images/img-1.jpg" alt="monitor with statistic" width="360">
                </li>
+
               <li class="img">
+                <picture>
+                    <source srcset="./images/img-2.jpg 1x, 
+                                    ./images/img2-2x.jpg 2x" 
+                                    media="(min-width:1200px)">
+                </picture>
                 <img class="activity-pic" src="./images/img-2.jpg" alt="screen" width="360">
               </li>
               <li class="img">
+                <picture>
+                    <source srcset="./images/img-3.jpg 1x, 
+                                    ./images/img3-2x.jpg 2x" 
+                                    media="(min-width:1200px)">
+                </picture>
                 <img class="activity-pic" src="./images/img-3.jpg" alt="phone" width="360">
               </li>
            </ul>

@@ -42,7 +42,7 @@ img {
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 1158px;
+    width: 100%;
     
     
 }
@@ -270,7 +270,7 @@ width: 100%;
 .feature-item {
 
     width:256px ;
-    margin-right:24px;
+    
     
 }
 .feature-item:last-child {
@@ -380,7 +380,7 @@ box-shadow: 0px 1px 6px 0px
     0px 2px 1px 0px 
      rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-     margin-bottom: 72px;
+     
 }
 
 
@@ -582,7 +582,7 @@ padding: 0;
   width: 264px;
 }
 .footer-title {
-    margin-bottom: 16px;
+    
 
     height: 24px;
     align-items: center;
@@ -624,13 +624,12 @@ padding: 0;
 .footer-subscribe{
    
         justify-content: center;
-        
         margin-left: auto;
         
         
 }
 .footer-input{
-    min-width: 264px;
+    
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -638,7 +637,7 @@ padding: 0;
     background-color:#2E2F42;
    padding-left: 16px;
    color: #FFFFFF;
-transition: border-color var(--transition-dur-and-func);
+  transition: border-color var(--transition-dur-and-func);
   
 }
 .footer-input:focus {
@@ -1155,9 +1154,9 @@ margin-left: auto;
             linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
 
-            url(../images/Dark-mb.png);
+            url(../images/hero-mob.jpg);
       background-position: center;
-        width: 428px;
+        width: 100%;
         height: auto;
         
     }
@@ -1203,10 +1202,13 @@ margin-left: auto;
 
     .feature-item {
 
-        width: 396px;
+        width: 100%;
         margin-bottom: 72px;
 
     }
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
 
     .feature-title {
 
@@ -1220,6 +1222,7 @@ margin-left: auto;
 
         color: var(--title-text-color);
     }
+    
 
     .feature-text {
 
@@ -1238,7 +1241,7 @@ margin-left: auto;
 
 .team {
     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-bottom: 128px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -1252,7 +1255,7 @@ margin-left: auto;
     .team-pic {
         display: block;
         flex-wrap: wrap;
-        width: 260px;
+        width: 264px;
 
         background-color: #FFFFFF;
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -1261,14 +1264,20 @@ margin-left: auto;
         border-radius: 0px 0px 4px 4px;
 
     }
+        .team-subtitle {
+            font-weight: 500;
+    
+        }
    
        
     .card-cont{
        width: 100%; 
     }
+        .card-cont:last-child {
+            margin-bottom: 0;
 
 
-
+        }
     .customers {
       padding: 96px 0px ;
       
@@ -1304,8 +1313,9 @@ margin-left: auto;
     justify-content: center;
     align-items: center;
     margin-bottom: 72px;
-  
+
 }
+
 .footer-title{
     display: flex;
     margin-bottom: 16px;
@@ -1315,6 +1325,7 @@ margin-left: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .footer-subscribe{
     margin: 0;
@@ -1325,11 +1336,11 @@ margin-left: auto;
     align-items: center;
 }
 .footer-input{
-    width: 396px;
+    min-width: 320px;
     margin: 0;
 }
 .footer-btn{
-    
+    margin-left: 0;
     margin-top: 16px;
     
 }
@@ -1378,6 +1389,8 @@ margin-left: auto;
 @media screen and (max-width:768px) {
 
     .mobile-menu {
+        display: flex;
+        flex-direction: column;
         position: fixed;
         width: 100%;
         height: 100%;
@@ -1438,31 +1451,46 @@ margin-left: auto;
     .mob-item{
         margin-bottom: 40px;
     }
+    .link-contacts{
+        color: #404BBF;
+    }
+
+     .mob-item :last-child {
+        margin-bottom: 0;
+    }
 
     .mob-item:hover,
     .mob-item:focus{
+
       color: var(--accent-color);
      }
 
-    .mob-site-nav{
-        margin-bottom: 284px;
+    .mob-main-nav{
+        justify-content: space-between;
+        height: 100%;
     }
 
-   
+   .main-nav{
+    margin-bottom: auto;
+   }
     .info-nav {
         display: block;
         margin-bottom: 48px;
 
     }
-    .mob-info{
-        color: #434455;
+    .mob-info-tel{
+        color: #404BBF;
 
     }
+    .mob-info{
+        color: #434455;
+    }
     .tel-item{
+        
         font-family: 'Roboto';
             font-style: normal;
             font-weight: 600;
-            font-size: 36px;
+            font-size: 26px;
             margin-bottom: 40px;
     }
     .email-item{
@@ -1476,7 +1504,7 @@ margin-left: auto;
     .menu-soc-list {
         display: flex;
         
-        gap: 56px;
+        justify-content: space-between;
     }
 
     .menu-soc-link {
@@ -1498,9 +1526,14 @@ margin-left: auto;
         .link-studio::after {
             display: none;
         }
+.mobile-footer{
+    margin-top: auto;
+}
 
   .modal {
-    width: 392px;
+    width: 90%;
+    height: 100%;
+    overflow: scroll;
   }
 
 }
@@ -1525,12 +1558,21 @@ margin-left: auto;
     display: block;
     
  }
-    
+ .site-nav .item+.item {
+     margin-left: 0;
+ }
+   
     .info-link{
      padding: 0;
+    font-size: 12px;
      
     }
-
+.nav-link{
+    margin-right: 40px;
+}
+.site-nav.item:last-child {
+    margin-right: 0;
+}
 .main-nav{
     display: flex;
     align-items: center;
@@ -1547,7 +1589,7 @@ margin-left: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
     
-    url(../images/Dark-bg.png);
+    url(../images/hero-tab.jpg);
     background-position: center;
     width: 100%;
     height: auto;
@@ -1580,12 +1622,13 @@ margin-left: auto;
 
      .feature-item{
         max-width: 356px;
-        width: calc(100%/2- 24px);
+     width: calc((100% -24px) /2);
      }
     .feature-title {
 
      font-weight: 700;
      font-size: 36px;
+    color: #2E2F42;
     }
 
     .feature-text {
@@ -1603,15 +1646,19 @@ margin-left: auto;
 display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 64px 24px;
     margin: 0;
-    
+  
+
 }
 .team-pic{
     width: 264px;
         height: 428px;
 }
-
+.team-subtitle{
+    font-size: 20px;
+    font-weight: 500;
+}
 .customers {
     padding: 96px 0px;
 
@@ -1619,7 +1666,7 @@ display: flex;
 
 .customer-item {
     /*width: calc(100%/3- 24px);*/
-    width: 190px;
+    width: 168px;
     height: 88px;
 }
 
@@ -1632,11 +1679,19 @@ display: flex;
 .footer-soc-logo {
     
     margin-right: 24px;
-    margin-bottom: 72px;
+    
+}
+.footer-title{
+    margin-bottom: 16px;
 }
 .soc-logo{
     display: flex;
+    
 
+}
+.footer-input{
+    min-width: 264px;
+    margin-bottom: 0;
 }
 
 
@@ -1661,7 +1716,9 @@ display: flex;
     min-width: 356px;
 }
 .modal {
-    width: 408px;
+    max-width: 408px;
+    overflow: scroll;
+    height: 100%;
 }
 
 }
@@ -1686,6 +1743,9 @@ display: flex;
     padding: 0;
     
 
+}
+.info-link{
+    font-size: 16px;
 }
 
 .info-nav .item+.item {
