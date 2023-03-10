@@ -24,9 +24,9 @@
         <nav class="main-nav">
             <a href="./index.html" class="logo link"><span class="logo-part">WEB</span>STUDIO</a>
             <ul class="site-nav list">
-                <li class="item"><a class="nav-link link-studio link" href="./index.html">Studio</a></li>
-                <li class="item"><a class="nav-link  link" href="./portfolio.html">Portfolio</a></li>
-                <li class="item"><a class="nav-link link" href="">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link link-studio link" href="./index.html">Studio</a></li>
+                <li class="nav-item"><a class="nav-link  link" href="./portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link link" href="">Contacts</a></li>
             </ul>
         </nav>
         <button class="mob-btn" type="button" data-menu-open>
@@ -37,7 +37,7 @@
         <address class="site-nav list">
             <ul class="info-nav list">
                 <li class="item"><a class="info-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="item"><a class="info-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li class="info-item item"><a class="info-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
 
@@ -53,7 +53,7 @@
                 <ul class="mob-site-nav list">
                     <li class="mob-item"><a class="mob-nav-link link-studio link" href="./index.html">Studio</a></li>
                     <li class="mob-item"><a class="mob-nav-link link" href="./portfolio.html">Portfolio</a></li>
-                    <li class="mob-item"><a class="mob-nav-link link-contacts link" href="">Contacts</a></li>
+                    <li class="mob-item mob-contact"><a class="mob-nav-link link-contacts link" href="">Contacts</a></li>
                 </ul>
             </nav>
             </div>
@@ -106,7 +106,7 @@
 
 <main>
     
-    <section class=" hero mob-hero">
+    <section class=" hero mob-hero conteiner">
         <h1 class="hero-title mob-hero-title">Effective Solutions<br> for Your Business</h1>
         <button type="button" class="button " data-modal-open>Order Service</button>
     </section> 
@@ -160,8 +160,9 @@
                     <source srcset="./images/img-1.jpg 1x, 
                                     ./images/img1-2x.jpg 2x" 
                                      media="(min-width:1200px)">
+                <img class="activity-pic" src="./images/img-1.jpg" alt="monitor with statistic" width="360">
                 </picture>
-                 <img class="activity-pic" src="./images/img-1.jpg" alt="monitor with statistic" width="360">
+                 
                </li>
 
               <li class="img">
@@ -169,23 +170,25 @@
                     <source srcset="./images/img-2.jpg 1x, 
                                     ./images/img2-2x.jpg 2x" 
                                     media="(min-width:1200px)">
-                </picture>
                 <img class="activity-pic" src="./images/img-2.jpg" alt="screen" width="360">
+                </picture>
+                
               </li>
               <li class="img">
                 <picture>
                     <source srcset="./images/img-3.jpg 1x, 
                                     ./images/img3-2x.jpg 2x" 
                                     media="(min-width:1200px)">
+                    <img class="activity-pic" src="./images/img-3.jpg" alt="phone" width="360">
                 </picture>
-                <img class="activity-pic" src="./images/img-3.jpg" alt="phone" width="360">
+                
               </li>
            </ul>
         </div>
    </section>
 
     <section class="team"> 
-        <div class="conteiner">
+        <div class="conteiner tablet-conteiner">
             <h2 class="team-title">Our Team</h2>
             <ul class="team-list list">
                 <li class="team-pic ">
@@ -204,10 +207,10 @@
                                          ./images/imgmob2x.jpg 2x" 
 
                          media="(max-width:768px)">
-
+                   <img class="team-picture" src="./images/img-m.jpg" alt="Mark Guerrero" width="264">
                    </picture>
 
-                    <img class="team-picture" src="./images/img-m.jpg" alt="Mark Guerrero" width="264">
+                    
                     
                     <div class="card-cont">
                        <h3 class="team-subtitle">Mark Guerrero</h3>
@@ -261,9 +264,9 @@
                                         ./images/imgmob12x.jpg 2x" 
                                         
                                         media="(max-width:768px)">
-                    
-                    </picture>
                     <img class="team-picture" src="./images/img1.jpg" alt="tom ford" width="264">
+                    </picture>
+                   
                     
                   <div class="card-cont">
                      <h3 class="team-subtitle">Tom Ford</h3>
@@ -312,9 +315,9 @@
                     
                         <source srcset="./images/img-mob113.jpg 1x, 
                                         ./images/img-mob132x.jpg 2x" media="(max-width:768px)">
-                    
-                    </picture>
                     <img class="team-picture" src="./images/img3.jpg" alt="camila garcia" width="264">
+                    </picture>
+                   
                     
                     <div class="card-cont">
                       <h3 class="team-subtitle">Camila Garcia</h3>
@@ -369,9 +372,9 @@
                                         ./images/img-mob142x.jpg 2x"
                                         
                                         media="(max-width:768px)">
-                    
-                    </picture>
                     <img class="team-picture mob-team-picture4" src="./images/img2.jpg" alt="daniel wilson" width="264">
+                    </picture>
+                   
                     
                     <div class="card-cont">
                       <h3 class="team-subtitle">Daniel Wilson</h3>
@@ -417,7 +420,7 @@
 
 
   <section class="customers">
-    <div class="conteiner">
+    <div class=" tablet-conteiner conteiner">
         <h2 class="team-title">Customers</h2>
         <ul class="customer-list list">
             <li class="customer-item">
@@ -470,7 +473,7 @@
 </main>
 
 <footer class="footer">
-    <div class="conteiner footer-social">
+    <div class="tablet-conteiner conteiner footer-social">
      <div class="soc-logo">
         <div class="footer-soc-logo">
           <a class="logo-footer link" href="./index.html"><span class="logo-part">WEB</span>STUDIO</a>
