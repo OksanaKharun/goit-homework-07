@@ -1135,7 +1135,7 @@ margin-left: auto;
         display: flex;
         padding: 0;
         border: none;
-        height: 22;
+        height: 22px;
         background-color: #FFFFFF;
     }
 
@@ -1677,7 +1677,7 @@ margin-left: auto;
 
      .feature-item{
         max-width: 356px;
-     width: calc((100% -24px) /2);
+        width: calc((100% - 24px) /2);
      }
     .feature-title {
 
@@ -1776,7 +1776,7 @@ display: flex;
 }
 
 .services-item {
-    width: calc(100%/2- 24px);
+    width: calc(100%/2 - 24px);
     max-width: 356px;
 }
 .modal {
@@ -1801,7 +1801,11 @@ display: flex;
         padding-right: 15px;
         
     }
+        .hero-conteiner {
+            max-width: 1440px;
+           
     
+        }
 
 .info-nav {
     display: flex;
@@ -1870,6 +1874,7 @@ width: 100%;
 }
 .feature-text{
     color: #434455;
+    font-weight: 400;
 }
 
 .feature-item:last-child {
